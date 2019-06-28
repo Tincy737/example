@@ -3,15 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>京剧中的旦角文化</title>
-<link rel="stylesheet" href="css/daohanglan.css">
-<link rel="stylesheet" href="css/.css">
+<link rel="shortcut icon" href="images/0.jpg" type="image/jpg"/>
+	<link rel="stylesheet" href="css/daohanglan.css">
+	<link rel="stylesheet" href="css/main1.css">
 <style>
-	body{ 
-		margin-top: -1em;
-		margin-left: -2.3em; 
-	}
-	.main{
+	.p{
+		height: 84%;
 		width: 100%;
+		z-index: -10;
+		position: relative;
 	}
 </style>
 </head>
@@ -19,6 +19,7 @@
    <!--导航栏-->
     <div class="menu">
 		<ul>
+			<li></li>
 			<li>
 				<a href="#">京剧</a>
 				<ul>
@@ -49,29 +50,39 @@
 			<li>
 				<a href="#">唱一唱</a>
 			</li>
+			<li>
+				<!--戏曲轮播-->
+				<div class="music">
+					<audio width="100%" controls autoplay>
+						<source src="media/.mp4" type="video/mp4">
+					</audio>
+				</div>
+   			</li>
 		</ul>
 	</div>
 	
-	<!--主页内容-->
-	<div class="main">
- 		<div class="radio">
-  			
- 	 	</div>
-   
-  		<div class="music">
-   
-   		</div>
-   		
-   		<div class="picture">
-   		
-   		</div>
-   	</div>
-   	
-   	
-<script>
 	
-</script>
-    
+<!--主页内容-->
+	<div class="main">
+		<!--图片轮换-->
+   		<div class="picture">
+			<iframe src="transition/picture.html" name="main" class="i1" align="middle"></iframe>
+   		</div>
+	
+	
+		<div class="media">
+			<!--视频-->
+ 			<div class="radio">
+  				<video width="100%" controls autoplay>
+					<source src="media/唱脸谱.mp4" type="video/mp4">
+				</video>
+ 		 	</div>
+   		</div>
+   		
+   		
+	</div>
+	
+
 </body>
 </html>
 
