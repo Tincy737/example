@@ -13,9 +13,10 @@
 	}
 	.menu>ul>li>a{
 		text-decoration: none;
-		font-family: qiankun;
+		font-family:'字魂71号-御守锦书';
+		font-size: 30px;
 		color: antiquewhite;
-		line-height: 4em;
+		line-height: 2.2em;
 	}
 	.menu>ul>li:hover{
 		background-color: #212121;
@@ -46,8 +47,10 @@
 	}
 	.menu>ul>li:hover>ul>li>a{
 		text-decoration: none;
+		font-family:'字魂87号-乾坤手书';
+		font-size: 20px;
 		color:antiquewhite;
-		line-height: 3em;
+		line-height: 2.5em;
 	}
 	.menu>ul>li:hover>ul>li:hover{
 		background-color:#5B5959;

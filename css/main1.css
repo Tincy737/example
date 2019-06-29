@@ -46,7 +46,8 @@
 	}
 	.i1{
 		text-align: center;
-		height: 59%;
+		height: 58%;
 		width: 40%;
 		 box-shadow: 15px 15px 15px #000;
+		border: thick;
 	}
