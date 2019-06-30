@@ -35,19 +35,13 @@
 		height: 100%;
 	}
 	
-	.picture{
+	.all{
 		text-align: center;
-		margin-top: 4em;
+		margin-top: 4.7em;
 		margin-left: 2.5%;
 		height: 85%;
 		width: 95%;
 		border: 5px solid #4F1819 ;
 		background-color: rgba(163,171,171,0.60);
 	}
-	.i1{
-		text-align: center;
-		height: 58%;
-		width: 40%;
-		 box-shadow: 15px 15px 15px #000;
-		border: thick;
-	}
+	

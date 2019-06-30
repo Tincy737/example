@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+	.zi{
+		float:left;
+		padding-left: 4em;
+		text-align: center;
+		width: 21%;
+		height: 60%;
+		
+	}
+	#zi{
+		text-shadow: 15px 15px 15px #000;
+		width: 100%;
+		height: 100%;
+	}
+	.picture{
+		float: left;
+		height: 85%;
+		margin: 0 auto;
+		width: 40%;
+	}
+	.i1{
+		text-align: center;
+		height: 68%;
+		width: 100%;
+		border: thick;
+	}
+	.xiao{
+		float: left;
+		width: 30%;
+		height: 100%;
+	}
+
+	.jue1,.jue2,.jue3{
+		float: left;
+		width: 30%;
+	}
+	.jue4{
+		float: left;
+		width: 40%;
+		margin-top: -8em;
+	}
+.jue5{
+	width: 30%;
+	float: left;
+	margin-top: -23em;
+	margin-left: 5em;
+}
+	.jue1:hover{
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+	}
+	.jue2:hover{
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+	}
+	.jue3:hover{
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+	}
+	.jue4:hover{
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+	}
+	.jue5:hover{
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+	}
