@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <fonts>
+    <font name="KaiTi" className="FskyFont_simkai" url="./files/fonts/font-0-0-201971135049685.swf" ttfurl="./files/fonts/font-0-0-201971135049685.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht" url="./files/fonts/font-1-0-201971135051956.swf" ttfurl="./files/fonts/font-1-0-201971135051956.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold" url="./files/fonts/font-1-1-201971135053636.swf" ttfurl="./files/fonts/font-1-1-201971135053636.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Italic" url="./files/fonts/font-1-2-20197113505553.swf" ttfurl="./files/fonts/font-1-2-20197113505553.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold_Italic" url="./files/fonts/font-1-3-201971135056833.swf" ttfurl="./files/fonts/font-1-3-201971135056833.ttf"/>
+  </fonts>
+</data>
