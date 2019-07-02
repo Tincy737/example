@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拼图小游戏</title>
+<style>
+	body{
+		font-family: myfont;
+	}
+    @font-face {
+        font-family: "myfont";
+        src: url("../font/字魂71号-御守锦书.ttf") format("truetype");
+    }
+	#main{
+		width: 500px;
+		height: 500px;
+		margin: 0 auto;
+		border: 5px solid #581112;
+	}
+	ul{
+		width: 450px;
+		height: 450px;
+		float: left;
+		margin: 5px;
+		padding: 0px;
+		list-style-type: none;
+		background-color: blanchedalmond;
+	}
+	li {
+		float: left;
+	}
+	#success {
+		display: none;
+		text-align: center;
+		margin-left: 46%;
+		margin-top: 20px;
+		width: 100px;
+		height: 40px;
+	}
+	body{
+		background-image: url("../images/18.jpg");
+		margin: 0 auto;
+		background-size: 1024px 800px;
+	
+	}
+	#begin{
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 0px;
+	}
+	.ha{
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 5px;
+	}
+    </style>
+</head>
+
+<body>
+	<div class="ha">关卡1</div>
+	<div id="main">
+		<ul id="begin">
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图02.png" alt="" width="150px" height="150px" draggable="true" id="drag1" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图05.png" alt="" width="150px" height="150px" draggable="true" id="drag2" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图09.png" alt="" width="150px" height="150px" draggable="true" id="drag3" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图01.png" alt="" width="150px" height="150px" draggable="true" id="drag4" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图06.png" alt="" width="150px" height="150px" draggable="true" id="drag5" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图03.png" alt="" width="150px" height="150px" draggable="true" id="drag6" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图08.png" alt="" width="150px" height="150px" draggable="true" id="drag7" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图04.png" alt="" width="150px" height="150px" draggable="true" id="drag8" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+			<li ondrop="drop(event)" ondragover="dropOver(event)">
+				<img src="images/拼图07.png" alt="" width="150px" height="150px" draggable="true" id="drag9" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+			</li>
+		</ul>
+	</div>
+	<input type="button" value="是否继续？" onClick="success()" id="success">
+	<script>
+		var start_index;
+		var end_index;
+		function dragStart(event) {
+			console.log("dragStart: " + event.target.id);
+			start_index = event.target.id;
+		}
+		function dragEnd(event) {
+			event.preventDefault();
+		}
+		function dropOver(event) {
+			event.preventDefault();
+		}
+		function drop(event) {
+			event.preventDefault();
+			console.log("drop: "+event.target.id);
+			end_index = event.target.id;
+			// 交换id1和id2两个元素的attri属性值
+			exchange(start_index, end_index, "src");
+			// 检查拼图是否已完成，若完成显示对应文本
+			check();
+		}
+		function exchange(id1, id2, attri){
+			x1=document.getElementById(id1);
+			x2=document.getElementById(id2);
+			var attri1=x1.getAttribute(attri);
+			x1.setAttribute(attri,x2.getAttribute(attri));
+			x2.setAttribute(attri,attri1);
+			// 添加代码：交换id1和id2两个元素的attri属性值
+		}
+		function check(){
+			var y=document.getElementsByTagName("img");
+			var a,b,c,i;
+			for(i=0;i<9;i++)
+			{
+				a=y[i].getAttribute("src");
+				b=a.lastIndexOf(".");
+				c=Number(a.slice(b-2,b));
+				if(c!=i+1)
+					return false;
+			}
+			var success=document.getElementById("success");
+			success.style.display="block";
+			// 添加代码：检查拼图是否已完成，若完成显示对应文本
+		}
+		function success(){
+			var yes=confirm("恭喜您已完成拼图，接下来您是否要开启您的宝鸡之旅？？？");
+			if(yes){
+				window.open("first.html","scrollbars,location,status");
+			}
+			else{
+				alert("真是遗憾，期待与您一起的下次旅途！");
+			}
+		}
+		console.log("");
+	</script>
+</body>
+</html>
