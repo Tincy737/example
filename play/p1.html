@@ -3,63 +3,26 @@
 <head>
 <meta charset="utf-8">
 <title>关卡1</title>
+<link rel="stylesheet" href="../css/ping.css">
 <style>
 	body{
 		font-family: myfont;
+		color: #531819;
 	}
     @font-face {
         font-family: "myfont";
         src: url("font/字魂71号-御守锦书.ttf") format("truetype");
     }
-	#main{
-		width: 500px;
-		height: 500px;
-		margin: 0 auto;
-		border: 5px solid #581112;
-	}
-	ul{
-		width: 450px;
-		height: 450px;
-		float: left;
-		margin: 5px;
-		padding: 0px;
-		list-style-type: none;
-		background-color: blanchedalmond;
-	}
-	li {
-		float: left;
-	}
-	.button{
-		text-align: center;
-	}
-	#success {
-		display: none;
-		text-align: center;
-		margin-left: 46%;
-		margin-top: 20px;
-		width: 100px;
-		height: 40px;
-	}
-	body{
-		background-image: url("../images/18.jpg");
-		margin: 0 auto;
-		background-size: 1024px 800px;
-	}
-	#begin{
-		margin-top: 25px;
-		margin-left: 25px;
-		margin-right: 0px;
-	}
-	.ha{
-		text-align: center;
-		font-size: 40px;
-		margin-bottom: 5px;
-	}
-    </style>
+	
+</style>
 </head>
 
 <body>
 	<div class="ha">关卡1</div>
+	<div class="button">
+		<a href="p1.html"><img src="../images/2.1.png" class="i"></a>
+		<a href="p3.html"><img src="../images/2.2.png" class="i1"></a>
+	</div>
 	<div id="main">
 		<ul id="begin">
 			<li ondrop="drop(event)" ondragover="dropOver(event)">
@@ -91,10 +54,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="button">
-		<input type="button" value="返回 玩一玩 " onClick="pic.html">
-		<input type="button" value="下一关" onClick="" id="success">
-	</div>
+	
 	<script>
 		var start_index;
 		var end_index;
@@ -136,9 +96,7 @@
 				if(c!=i+1)
 					return false;
 			}
-			var success=document.getElementById("success");
-			success.style.display="block";
-			// 添加代码：检查拼图是否已完成，若完成显示对应文本
+			alert("恭喜你已过关！");
 		}
 		console.log("");
 		
