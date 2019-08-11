@@ -11,9 +11,8 @@
 		height: 4em;
 		z-index: 1;
 	}
-	.menu>ul>li>a{
+	.menu>ul>li>h,a{
 		text-decoration: none;
-		font-family:'字魂71号-御守锦书';
 		font-size: 2em;
 		color: antiquewhite;
 		line-height: 2.2em;
@@ -47,7 +46,6 @@
 	}
 	.menu>ul>li:hover>ul>li>a{
 		text-decoration: none;
-		font-family: '字魂71号-御守锦书';
 		font-size: 20px;
 		color:antiquewhite;
 		line-height: 2.5em;
@@ -58,3 +56,4 @@
 	.menu>ul>li:last-child{
 		width: 25%;
 	}
+
