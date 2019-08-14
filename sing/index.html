@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="../test/src/css/smusic.css"/>
+<title>唱一唱</title>
+</head>
+<body>
+<div class="grid-music-container f-usn">
+    <div class="m-music-play-wrap">
+        <div class="u-cover"></div>
+        <div class="m-now-info">
+            <h1 class="u-music-title"><strong>标题</strong><small>歌手</small></h1>
+            <div class="m-now-controls">
+                <div class="u-control u-process">
+                    <span class="buffer-process"></span>
+                    <span class="current-process"></span>
+                </div>
+                <div class="u-control u-time">00:00/00:00</div>
+                <div class="u-control u-volume">
+                    <div class="volume-process" data-volume="0.50">
+                        <span class="volume-current"></span>
+                        <span class="volume-bar"></span>
+                        <span class="volume-event"></span>
+                    </div>
+                    <a class="volume-control"></a>
+                </div>
+            </div>
+            <div class="m-play-controls">
+                <a class="u-play-btn prev" title="上一曲"></a>
+                <a class="u-play-btn ctrl-play play" title="暂停"></a>
+                <a class="u-play-btn next" title="下一曲"></a>
+                <a class="u-play-btn mode mode-list current" title="列表循环"></a>
+                <a class="u-play-btn mode mode-random" title="随机播放"></a>
+                <a class="u-play-btn mode mode-single" title="单曲循环"></a>
+            </div>
+        </div>
+    </div>
+    <div class="f-cb">&nbsp;</div>
+    <div class="m-music-list-wrap"></div>
+</div>
+<script src="../test/src/js/smusic.min.js"></script>
+<script>
+var musicList = [
+	{
+		title : '海岛冰轮初转腾',
+		singer : '梅兰芳',
+		cover  : 'images/.jpg',
+		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=BD79BA80CC1322A9042DA38669BF944A'
+	},
+	{
+		title : '梨花颂',
+		singer : '梅葆玖',
+		cover  : 'images/.jpg',
+		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=C0F6F6D01283829A5032234F6DB356D5'
+	},	
+	{
+		title : '苏三起解',
+		singer : '李胜素',
+		cover  : 'images/.jpg',
+		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=C9DB1D2D94EAF3FAEA057F17CD437181'
+	},
+	{
+		title : '三家店',
+		singer : '于魁智',
+		cover  : 'images/.jpg',
+		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=A84C19F3B687C38F65DF6E4C168255A0&album_id=0'
+	}
+];
+new SMusic({
+	musicList:musicList
+});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
