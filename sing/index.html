@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<link rel="stylesheet" href="../test/src/css/smusic.css"/>
+<link rel="stylesheet" href="src/css/smusic.css"/>
 <title>唱一唱</title>
 </head>
 <body>
@@ -41,32 +41,39 @@
     <div class="f-cb">&nbsp;</div>
     <div class="m-music-list-wrap"></div>
 </div>
-<script src="../test/src/js/smusic.min.js"></script>
+
+
+<div class="liu" style="text-align:center;margin:45px 650px;">
+	<iframe src="word.html" name="main" class="i1" align="middle"></iframe>
+</div>
+
+
+<script src="src/js/smusic.min.js"></script>
 <script>
 var musicList = [
 	{
-		title : '海岛冰轮初转腾',
-		singer : '梅兰芳',
-		cover  : 'images/.jpg',
-		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=BD79BA80CC1322A9042DA38669BF944A'
+		title : '梨花颂',
+		singer : '李胜素',
+		cover  : 'images/9.jpg',
+		src    : 'src/梨花颂.mp3'
 	},
 	{
-		title : '梨花颂',
+		title : '海岛冰轮初转腾',
 		singer : '梅葆玖',
-		cover  : 'images/.jpg',
-		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=C0F6F6D01283829A5032234F6DB356D5'
+		cover  : 'images/10.jpg',
+		src    : 'src/贵妃醉酒.mp3'
 	},	
 	{
 		title : '苏三起解',
-		singer : '李胜素',
-		cover  : 'images/.jpg',
-		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=C9DB1D2D94EAF3FAEA057F17CD437181'
+		singer : '梅兰芳',
+		cover  : 'images/9.jpg',
+		src    : 'src/苏三起解.mp3'
 	},
 	{
-		title : '三家店',
-		singer : '于魁智',
-		cover  : 'images/.jpg',
-		src    : 'http://www.kugou.com/song/e0qjxd6.html?frombaidu#hash=A84C19F3B687C38F65DF6E4C168255A0&album_id=0'
+		title : '卖水',
+		singer : '梦花蕾',
+		cover  : 'images/10.jpg',
+		src  :  "src/卖水.mp3"
 	}
 ];
 new SMusic({
@@ -74,7 +81,6 @@ new SMusic({
 });
 </script>
 
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-</div>
+
 </body>
 </html>
