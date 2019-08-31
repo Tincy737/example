@@ -141,7 +141,7 @@ body{
 .grid-music-container .m-now-controls .u-control{
     display: inline-block;
     vertical-align:middle;
-    font-size: 10;
+    font-size: 1px;
     overflow: hidden;
 }
 .grid-music-container .m-now-controls .u-process{
