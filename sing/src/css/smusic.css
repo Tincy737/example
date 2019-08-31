@@ -1,4 +1,10 @@
-
+/**
+ * SMusic
+ * Author:Smohan
+ * Version:1.0.0
+ * url: http://www.smohan.net/lab/smusic.html
+ * 使用请保留以上信息
+ */
 @charset "utf-8";
 /*reset*/
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);word-wrap: break-word;font-size: inherit;line-height: inherit;overflow: visible;}
@@ -34,31 +40,36 @@ header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{d
 ::-webkit-scrollbar-button:vertical{display:none}
 ::-webkit-scrollbar-track:vertical{background-color:transparent;}
 ::-webkit-scrollbar-track-piece{background-color:transparent;}
-::-webkit-scrollbar-thumb:vertical{background-color:#3792ef;border-radius:6px}
+::-webkit-scrollbar-thumb:vertical{background-color:#461213;border-radius:6px}
 ::-webkit-scrollbar-thumb:vertical:hover,
-::-webkit-scrollbar-thumb:vertical:active {background-color: #2e86ef}
+::-webkit-scrollbar-thumb:vertical:active {background-color: #532223}
 
-html,body{
-    width: 100%;
-    height: 100%;
-    background-color: #3792ef;
-    overflow: hidden;
-    font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif;
-}
+body{
+		font-family: myfont;
+		color:#fff;
+	}
+    @font-face {
+        font-family: "myfont";
+        src: url("../../font/字魂71号-御守锦书.ttf") format("truetype");
+    }
+
+	body{
+		background-image: url(../../../images/37.jpg);
+	}
 
 /*SMusic*/
 .grid-music-container{
-    width: 520px;
-    height: 276px;
+    width: 500px;
+    height: 350px;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -158px;
-    margin-left: -280px;
-    background-color: rgba(255,255,255,.7);
-    font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif;
-    text-shadow: 1px 0 0 rgba(255,255,255,.7);
+    margin-top: -210px;
+    margin-left: -630px;
+    background-color: rgba(255,255,255,.5);
+    font-family: myfont;
+    text-shadow: 2px 0 0 rgba(255,255,255,.7);
 }
 
 .grid-music-container .m-music-play-wrap{
@@ -70,7 +81,7 @@ html,body{
     width: 121px;
     height: 121px;
     overflow: hidden;
-    background: url(../../../test/src/img/music_icons.png) 0 0 no-repeat;
+    background: url(../img/music_icons.png) 0 0 no-repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -114,13 +125,13 @@ html,body{
     font-weight: normal;
 }
 .grid-music-container .m-now-info h1 strong{
-    font-size: 18px;
+    font-size: 40px;
     color: #111210;
     font-weight: normal;
 }
 .grid-music-container .m-now-info h1 small{
     margin-left: 20px;
-    font-size: 14px;
+    font-size: 25px;
     color: #313230;
 }
 .grid-music-container .m-now-controls{
@@ -130,7 +141,7 @@ html,body{
 .grid-music-container .m-now-controls .u-control{
     display: inline-block;
     vertical-align:middle;
-    font-size: 0;
+    font-size: 10;
     overflow: hidden;
 }
 .grid-music-container .m-now-controls .u-process{
@@ -142,7 +153,7 @@ html,body{
 .grid-music-container .m-now-controls .u-process .buffer-process,.grid-music-container .m-now-controls .u-process .current-process{
     display: block;
     width: 0;
-    height: 4px;
+    height: 5px;
     position: absolute;
     top:0;
     left: 0;
@@ -155,7 +166,7 @@ html,body{
 }
 .grid-music-container .m-now-controls .u-time{
     margin-left: 10px;
-    font-size: 12px;
+    font-size: 16px;
     color: #585957;
 }
 .grid-music-container .m-now-controls .u-volume{
@@ -167,7 +178,7 @@ html,body{
 .grid-music-container .u-volume .volume-process{
     width: 3px;
     height: 50px;
-    background: #cecfd4;
+    background:#4E2526;
     position: absolute;
     top: -54px;
     left: 6px;
@@ -219,7 +230,7 @@ html,body{
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: url(../../../test/src/img/music_icons.png) -140px -80px no-repeat;
+    background: url(../img/music_icons.png) -140px -80px no-repeat;
     cursor: pointer;
 }
 .grid-music-container .u-volume .volume-control:hover{
@@ -245,16 +256,16 @@ html,body{
     line-height: 30px;
     padding: 0 10px;
     cursor: pointer;
-    color: #383937;
-    font-size: 14px;
+    color: #0C0517;
+    font-size: 30px;
 }
 .grid-music-container .m-music-list-wrap li strong{
-    font-size: 16px;
+    font-size: 25px;
     font-weight: normal;
 }
 .grid-music-container .m-music-list-wrap li:hover,.grid-music-container .m-music-list-wrap li.current{
-    background-color: rgba(255,255,255,.7);
-    color: #3792ef;
+    background-color: rgba(191,170,170,1.00);
+    color: #843E3F;
 }
 .grid-music-container .m-music-list-wrap li.current{
     background-color: transparent;
@@ -274,7 +285,7 @@ html,body{
     cursor: pointer;
 }
 .u-play-btn{
-    background: url(../../../test/src/img/music_icons.png) -220px 0 no-repeat;
+    background: url(../img/music_icons.png) -220px 0 no-repeat;
 }
 .u-play-btn.prev,.u-play-btn.next{
     background-position: -220px 0;
@@ -321,4 +332,15 @@ html,body{
 }
 .u-play-btn.mode-single.current{
     background-position: -221px -80px;
+}
+
+
+.liu{
+	width: 50%;
+	height: 530px;
+	background-color: #8E8485;
+}
+.i1{
+	width: 100%;
+	height: 100%;
 }
