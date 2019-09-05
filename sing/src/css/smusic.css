@@ -47,12 +47,6 @@ header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{d
 body{
 		font-family: myfont;
 		color:#fff;
-	        position: fixed;
-    		top: 0;
-    		bottom: 0;
-    		left: 0;
-    		right: 0;
-   		 margin: auto;
 	}
     @font-face {
         font-family: "myfont";
@@ -77,7 +71,7 @@ body{
     background-color: rgba(255,255,255,.5);
     font-family: myfont;
     text-shadow: 2px 0 0 rgba(255,255,255,.7);
-    z-index:-10;
+	z-index: -10;
 }
 
 .grid-music-container .m-music-play-wrap{
